@@ -4,6 +4,38 @@ body {
 	font-family: sans-serif;
 	
 }
+.home{
+	height:100px;
+	width: 100;
+	align-items: center;
+	position: relative;
+	justify-content: center;
+	display: flex;
+	overflow: hidden;
+	float: left;
+}
+
+.home h1 {
+	font-family: serifa, serif;
+	font-weight: 400;
+	font-style: normal;
+	margin: 50px 0px 50px 0px;
+	padding: 50px ;
+	z-index: 2;
+	text-align: left;
+	background: #fff;
+	
+
+}
+.videohhome{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+
+}
+
+
 .gallery {
 	margin: 10px 50px;
 }
@@ -18,4 +50,16 @@ body {
 .gallery img:hover{
 	filter: grayscale(0%);
  	transform: scale(1.1);
+}
+
+
+.gallery p{
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 16pt;
+	font-weight: 100;
+	text-align: center;
+	margin: 30px 0px;
+	padding: 10px
+	
+
 }
