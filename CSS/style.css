@@ -1,18 +1,38 @@
 body {
-	margin: 30px 0 50px;
 	text-align: center;
 	font-family: sans-serif;
 	
 }
+
+.column {
+	
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(2,2fr);
+	grid-gap: 1em;
+}
+
+
+img {
+	width: 100px;
+	height: auto;
+	object-fit: contain;
+}
+
+.pagefull {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+
+}
 .home{
 	height:100px;
-	width: 100;
+	width: 100px;
 	align-items: center;
 	position: relative;
 	justify-content: center;
 	display: flex;
 	overflow: hidden;
-	float: left;
+
 }
 
 .home h1 {
@@ -37,12 +57,19 @@ body {
 
 
 .gallery {
-	margin: 10px 50px;
+/*	margin: 0px 50px 0px 50px;*/
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	
+	
+;
+
+	
 }
 .gallery img{
 	align-items: center;
-	width: 270px;
-	padding: 10px;
+	width: 100%;
 	filter: grayscale(100%);
 	transition: 1s; 
 }
@@ -58,8 +85,14 @@ body {
 	font-size: 16pt;
 	font-weight: 100;
 	text-align: center;
-	margin: 30px 0px;
-	padding: 10px
+	padding: 10px;
+	position:relative;
+	
 	
 
 }
+
+
+p, div, h1, h2, h3, h4, h5, h6, nav, address, section, artical, img { border: 4px solid red}
+body
+
