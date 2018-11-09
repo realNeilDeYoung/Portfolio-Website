@@ -3,22 +3,6 @@ body {
 	font-family: sans-serif;
 	
 }
-
-.column {
-	
-	display: grid;
-	grid-template-columns: repeat(3,1fr);
-	grid-template-rows: repeat(2,2fr);
-	grid-gap: 1em;
-}
-
-
-img {
-	width: 100px;
-	height: auto;
-	object-fit: contain;
-}
-
 .pagefull {
 	display: grid;
 	grid-template-columns: 1fr 3fr;
@@ -26,7 +10,7 @@ img {
 }
 .home{
 	height:100px;
-	width: 100px;
+	width: auto;
 	align-items: center;
 	position: relative;
 	justify-content: center;
@@ -47,11 +31,13 @@ img {
 	
 
 }
+/*
 .videohhome{
 	position: fixed;
 	left: 0px;
 	top: 0px;
 	width: 100%;
+*/
 
 }
 
@@ -63,6 +49,7 @@ img {
 	margin-right: auto;
 	
 	
+	
 ;
 
 	
@@ -72,6 +59,7 @@ img {
 	width: 100%;
 	filter: grayscale(100%);
 	transition: 1s; 
+
 }
 	
 .gallery img:hover{
@@ -91,6 +79,50 @@ img {
 	
 
 }
+
+
+.column {
+	
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-auto-rows: auto;
+	grid-gap: 30px;
+	margin: 0px 25px;
+	grid-auto-flow: row dense;
+	
+}
+
+.Img {
+
+	width: 400px;
+	height: 400px;
+	overflow: hidden;
+	object-fit: cover;
+	
+}
+
+.Img--Large{
+grid-row-end: 3;
+width: 400px;
+height: 400px;
+overflow: hidden
+}
+
+.Img--Mid{
+	grid-row-end: 3;
+	width: 50%;
+}
+
+
+
+/*
+img {
+	width: 100px;
+	height: auto;
+	object-fit: contain;
+}
+*/
+
 
 
 p, div, h1, h2, h3, h4, h5, h6, nav, address, section, artical, img { border: 4px solid red}

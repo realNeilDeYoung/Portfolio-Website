@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+	<style type= "text/css">
+	
+		.grid_parent {
+			margin: 10px;
+			display: grid;
+			grid-template-columns: repeat(7,6fr);
+			grid-auto-rows: 200px;
+
+				
+		}
+		
+		.Nav {
+			background-color: aqua;
+			grid-column: 1 / 3;
+			grid-row: 1 / 6;
+			
+			}
+		
+		.Gallery {
+			
+			background-color: blanchedalmond;
+				
+			
+			grid-column: 3 / 9;
+			grid-row: 1 / 6;
+		}
+		
+		.Gallery p{
+			text-align: center;
+			background-color: white;
+			margin: 50px;
+			padding: 50px;
+		}
+/*
+		.pictures {
+			display: grid;
+			grid-template-columns: repeat(3,1fr);
+			grid-auto-rows: 400px;
+			width: 400px;
+			height: 400px;
+		}
+*/
+		
+		.pictures{
+			display: grid;
+			
+		}
+		.box1{
+			
+		}
+	</style>
+</head>
+
+
+
+<body>
+	<div class="grid_parent">
+		
+		<div class="Nav">1
+		</div>
+		
+		<div class="Gallery">
+<!--			<p> Title </p>-->
+			<div class="pictures">
+				<div class="box1"></div>
+				<div class="box2"></div>
+				<div class="box3"></div>
+				<div class="box4"></div>
+			
+			
+			</div>
+		</div>
+		
+	</div>
+
+
+</body>
